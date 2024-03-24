@@ -13,7 +13,7 @@ class Mahasiswa extends Model
 
     public function getAllMahasiswa()
     {
-        return $this->select("users.*, mahasiswa.*")->join("users", "users.username = nim")->get()->getResultArray();
+        return $this->select("users.*, mahasiswa.*,dosen.nama as nama_dosen")->join("users", "users.username = nim")->join("dosen", "dosen.id = dosen_id")->get()->getResultArray();
     }
 
     public function getMahasiswaById($id)

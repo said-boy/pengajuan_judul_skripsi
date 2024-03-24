@@ -30,6 +30,7 @@ $account = new AccountController();
                 <th>Password</th>
                 <th>Nama</th>
                 <th>Jurusan</th>
+                <th>Dosen PA</th>
                 <th>Mahasiswa Aktif</th>
                 <th>SKS >= 110</th>
                 <th>Lolos Metodologi Penelitian</th>
@@ -42,6 +43,7 @@ $account = new AccountController();
                     <td><?= $value["password"]?></td>
                     <td><?= $value["nama"]?></td>
                     <td><?= $value["jurusan"]?></td>
+                    <td><?= $value["nama_dosen"]?></td>
                     <?php if ($account->checkIsActiveMahasiswa($value["id"])) : ?>
                         <td>True</td>
                     <?php else : ?>
