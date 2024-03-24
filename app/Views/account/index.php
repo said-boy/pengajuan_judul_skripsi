@@ -20,7 +20,7 @@ $account = new AccountController();
     <h1>Daftar akun yang tersedia</h1>
     <p>Silahkan bisa login disini <a href="/login"><button>Login</button></a></p>
 
-    <p>semua data dibuat dengan data palsu (faker) dan random. jadi saya membuat tabel ini untuk mempermudah memilih akun</p>
+    <p>semua data dibuat dengan data palsu dan random. jadi saya membuat tabel ini untuk mempermudah memilih akun</p>
     
     <h1>Akun Mahasiswa</h1>
     <table border="1">
